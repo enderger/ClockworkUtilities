@@ -15,7 +15,7 @@ public class Main {
     @Instance
     public static Main instance;
 
-    @SidedProxy
+    @SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.COMMON)
     public static CommonProxy proxy;
 
     @EventHandler
