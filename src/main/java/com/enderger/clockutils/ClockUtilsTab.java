@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class ClockUtilsTab extends CreativeTabs {
     public ClockUtilsTab(String label) {
         super("clockutilstab");
-        this.setBackgroundImageName("clockutils:gui/tab_icon_search");
+        this.setBackgroundImageName("tab_icon_search.png");
     }
         public ItemStack getTabIconItem() {
             return new ItemStack(ItemInit.GEAR_COPPER);
