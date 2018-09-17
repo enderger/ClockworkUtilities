@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures" : {
-    "layer0" : "gear_copper"
+    "layer0" : "items/gear_copper"
   }
 }
