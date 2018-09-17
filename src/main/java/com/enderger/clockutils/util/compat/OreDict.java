@@ -5,6 +5,6 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDict {
     public static void registerOres() {
-        OreDictionary.registerOre("gearCopper", ItemInit.COPPER_GEAR);
+        OreDictionary.registerOre("gearCopper", ItemInit.GEAR_COPPER);
     }
 }
