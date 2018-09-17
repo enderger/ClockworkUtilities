@@ -3,6 +3,8 @@ package com.enderger.clockutils;
 //Imports
 import com.enderger.clockutils.proxy.CommonProxy;
 import com.enderger.clockutils.util.Reference;
+import com.enderger.clockutils.util.compat.OreDict;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,6 +17,7 @@ public class Main {
     @Instance
     public static Main instance;
 
+    public static final CreativeTabs clockutilstab = new ClockUtilsTab("clockutilstab");
     @SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.COMMON)
     public static CommonProxy proxy;
 
@@ -24,7 +27,7 @@ public class Main {
     }
     @EventHandler
     public static void init(FMLInitializationEvent event) {
-
+        OreDict.registerOres();
     }
     @EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
